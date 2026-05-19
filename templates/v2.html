@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Version 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Hello World - Version 2</h1>
+
+    <form method="POST">
+
+        <input type="text" name="nombre" placeholder="Enter your name">
+
+        <button type="submit">
+            Greet
+        </button>
+
+    </form>
+
+    <h2>{{ mensaje }}</h2>
+
+    <p>Nueva funcionalidad activada con Feature Flag</p>
+
+</div>
+
+</body>
+</html>
