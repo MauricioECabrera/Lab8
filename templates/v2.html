@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Version 2</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
 <div class="container">
@@ -13,7 +16,11 @@
 
     <form method="POST">
 
-        <input type="text" name="nombre" placeholder="Enter your name">
+        <input
+            type="text"
+            name="nombre"
+            placeholder="Enter your name"
+        >
 
         <button type="submit">
             Greet
@@ -23,7 +30,17 @@
 
     <h2>{{ mensaje }}</h2>
 
-    <p>Nueva funcionalidad activada con Feature Flag</p>
+    <p>
+        Nueva funcionalidad activada con Feature Flag
+    </p>
+
+    <h3>Funciones nuevas:</h3>
+
+    <ul>
+        <li>Interfaz en inglés</li>
+        <li>Feature Flag activada</li>
+        <li>Nueva versión del sistema</li>
+    </ul>
 
 </div>
 

@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # FEATURE FLAG
-VERSION_2_ACTIVA = False
+VERSION_2_ACTIVA = True
 
 @app.route("/", methods=["GET", "POST"])
 def index():
